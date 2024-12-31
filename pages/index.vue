@@ -6,6 +6,7 @@
     <PricePage />
     <TestimonialsPage />
     <Footer />
+    <!-- <side /> -->
   </div>
 </template>
 

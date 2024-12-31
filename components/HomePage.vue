@@ -140,7 +140,6 @@ section.home {
 .imgg {
   height: 90vh;
   overflow-x: hidden;
-
   right: -250px;
 }
 
@@ -204,5 +203,70 @@ section.home {
   border: none;
   border-radius: 5px;
   margin-top: 20px;
+}
+
+@media (max-width: 1280px) {
+  .side-rect {
+    display: none;
+  }
+  .content-container {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1150px) {
+  .content-container {
+    margin-left: 0px;
+  }
+  .main-img {
+    height: 80vh;
+    max-width: 80%;
+  }
+
+  .imgg {
+    position: absolute;
+    height: 75vh;
+    margin-top: 60px;
+    right: -50px;
+  }
+  .p {
+    width: 45%;
+  }
+}
+@media (max-width: 1100px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.home {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: -60px;
+  }
+  .main-img {
+    max-width: 100%;
+    display: block;
+    margin-top: 0;
+  }
+
+  .imgg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+  .p {
+    width: 70%;
+    text-align: center;
+  }
 }
 </style>

@@ -95,6 +95,8 @@
           </div>
         </div>
       </div>
+      <div class="copyright">© 2020 Landmark. All rights reserved.</div>
+      <div class="distribution">Distributed By Themewagon</div>
     </section>
   </div>
 </template>
@@ -111,6 +113,9 @@
 }
 .end {
   display: flex;
+  border-bottom: 1px solid #f2f5f9;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .end1 {
   display: flex;
@@ -173,7 +178,65 @@ ul.second {
   margin-top: 20px;
   font-weight: 700;
 }
-.social-iicons #ic {
-  gap: 30px;
+#ic {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+  fill: grey;
+}
+#ic:hover {
+  fill: black;
+}
+.copyright {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f2f5f9;
+  color: #abb8c7;
+  text-align: center;
+}
+.distribution {
+  text-align: center;
+  color: #abb8c7;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  #footer {
+    margin-top: 40px;
+  }
+  .end {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 3%;
+  }
+  .part2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -100px;
+  }
+  .end2 {
+    position: relative;
+    left: 6%;
+  }
+  .end3 {
+    position: relative;
+    left: 6%;
+    top: -58px;
+  }
+  .end4 {
+    position: relative;
+    top: -123px;
+    left: -30%;
+  }
+  .end5 {
+    position: relative;
+    top: -153px;
+    left: -35%;
+  }
+  .end {
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+  }
 }
 </style>

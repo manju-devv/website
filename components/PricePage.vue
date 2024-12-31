@@ -321,4 +321,26 @@ a.select {
   text-align: center;
   font-weight: 600;
 }
+
+@media (max-width: 900px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .card2,
+  .card3 {
+    margin-top: 40px;
+  }
+  .Price-details h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #Pricing {
+    padding-bottom: 80px;
+    margin-top: 10px;
+  }
+}
 </style>

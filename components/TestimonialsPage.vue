@@ -136,6 +136,13 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+.feedbacks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin: 50px;
+}
+
 .feedbacks .feedback1,
 .feedback2,
 .feedback3,
@@ -215,19 +222,12 @@ p {
   margin: 0 auto;
 }
 
-.feedbacks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin: 50px;
-}
-
 .feedback-context {
   position: relative;
 }
 
 .feed-img {
-  width: 105px;
+  width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 20px;
@@ -241,5 +241,32 @@ p {
   position: absolute;
   left: 2%;
   top: -15%;
+}
+
+@media (max-width: 1200px) {
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  @media (max-width: 800px) {
+    .feedbacks .feedback1,
+    .feedback2,
+    .feedback3,
+    .feedback4 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .feedback-context h3.feed-h3,
+    p.feed-p {
+      width: 90%;
+    }
+    #Testimonials {
+      margin-top: 10px;
+      padding-bottom: 70px;
+    }
+  }
 }
 </style>

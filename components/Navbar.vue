@@ -44,9 +44,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .navbar {
@@ -163,5 +161,38 @@
   background-color: #f13aa4;
   transform: rotate(45deg);
   border-radius: 40px;
+}
+
+@media (max-width: 1150px) {
+  .square1,
+  .square2 {
+    display: none;
+  }
+  .login {
+    color: #f13aa4;
+  }
+  .start {
+    background-color: #616ee7;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  .svg {
+    left: 2%;
+  }
+  .nav-links {
+    left: 35%;
+  }
+  .nav-links2 {
+    right: 2%;
+  }
+}
+@media (max-width: 1100px) {
+  .nav-links {
+    left: 30%;
+    gap: 20px;
+    font-size: 15px;
+  }
 }
 </style>

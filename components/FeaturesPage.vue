@@ -436,4 +436,13 @@ main .back-design {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .back-design {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainn {
+    margin-top: 30px;
+  }
+}
 </style>
