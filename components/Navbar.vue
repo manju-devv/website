@@ -26,7 +26,7 @@
                 class="menu-icon"
                 @click="toggleNavbar"
                 v-if="windowWidth <= 1100"
-                >{{ hidden ? "&#9776;" : "&#10005" }}</span
+                >{{ hidden ? "&#9776;" : "&#10005;" }}</span
               >
             </div>
             <ul
@@ -284,11 +284,11 @@ onUnmounted(() => {
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: 3%;
+    top: 4%;
     border-top: 1px solid #f2f5f9;
     padding-top: 1rem;
     padding-bottom: 2.2rem;
-    margin-top: 1.8rem;
+    margin-top: 1rem;
     z-index: 1;
     background-color: #ffffff;
   }

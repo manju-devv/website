@@ -294,6 +294,6 @@ p {
 }
 
 @media screen and (max-width: 300px) {
-  /* working */
+  /* working on this media-query */
 }
 </style>
