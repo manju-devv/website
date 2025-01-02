@@ -101,21 +101,19 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
 .svg-end > svg {
   height: 25px;
 }
 
 #footer {
-  margin-top: 70px;
+  margin-top: 4.3rem;
 }
 .end {
   display: flex;
   border-bottom: 1px solid #f2f5f9;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 1.87rem;
+  margin-bottom: 1.87rem;
 }
 .end1 {
   display: flex;
@@ -123,19 +121,19 @@
   margin-left: 80px;
 }
 .end1 .end-p {
-  max-width: 250px;
-  margin-left: -20px;
+  max-width: 16rem;
+  margin-left: -1.25rem;
   color: grey;
 }
 .part2 {
   display: flex;
-  gap: 60px;
-  margin-left: 40px;
+  gap: 3.7rem;
+  margin-left: 2.5rem;
 }
 li {
   list-style-type: none;
   color: grey;
-  margin-top: 10px;
+  margin-top: 0.62rem;
 }
 
 .end2,
@@ -144,52 +142,52 @@ li {
   flex-direction: column;
 }
 ul.first-ul {
-  margin-top: -10px;
-  margin-left: -35px;
+  margin-top: -0.62rem;
+  margin-left: -2.1rem;
 }
 ul.second {
-  margin-left: -30px;
+  margin-left: -1.8rem;
 }
 .end4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -50px;
+  margin-left: -3.1rem;
 }
 .end4 .a-links {
   display: flex;
   flex-direction: column;
 }
 .a-links a {
-  margin-left: 75px;
-  margin-top: 5px;
+  margin-left: 4.6rem;
+  margin-top: 0.31rem;
   text-decoration: none;
   color: grey;
 }
 
 #ic {
-  width: 20px;
+  width: 1.25rem;
 }
 
 .end5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: 700;
 }
 #ic {
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
   fill: grey;
 }
 #ic:hover {
   fill: black;
 }
 .copyright {
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.9rem;
   border-bottom: 1px solid #f2f5f9;
   color: #abb8c7;
   text-align: center;
@@ -197,12 +195,12 @@ ul.second {
 .distribution {
   text-align: center;
   color: #abb8c7;
-  padding-bottom: 30px;
+  padding-bottom: 1.8rem;
 }
 
 @media (max-width: 800px) {
   #footer {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
   .end {
     display: flex;
@@ -213,7 +211,7 @@ ul.second {
   .part2 {
     display: flex;
     flex-direction: column;
-    margin-bottom: -100px;
+    margin-bottom: -6.2rem;
   }
   .end2 {
     position: relative;
@@ -235,8 +233,8 @@ ul.second {
     left: -35%;
   }
   .end {
-    padding-bottom: 1px;
-    margin-bottom: 10px;
+    padding-bottom: 0.06rem;
+    margin-bottom: 0.6rem;
   }
 }
 </style>

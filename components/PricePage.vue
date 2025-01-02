@@ -5,11 +5,11 @@
         <p>OUR PRICING</p>
         <h3>Simple, Transparent Pricing for Everyone</h3>
       </div>
-      <div class="cards">
-        <div class="card1">
-          <h4><span class="span1">BASIC</span> PLAN</h4>
-          <p class="cost1">$<span class="span2">48</span></p>
-          <p class="description">
+      <div class="price-cards">
+        <div class="price-card1">
+          <h4><span class="plan-details">BASIC</span> PLAN</h4>
+          <p>$<span class="plan-price">48</span></p>
+          <p class="price-description">
             In our basic plan you can take advantage of all these features
             below.
           </p>
@@ -61,15 +61,15 @@
             </svg>
             <p>One More Feature</p>
           </div>
-          <div class="a">
-            <a class="select" href="#">SELECT THIS PLAN</a>
+          <div class="plan-container">
+            <a class="select-plan" href="#">SELECT THIS PLAN</a>
           </div>
         </div>
-        <div class="card2">
-          <div class="h5">MOST POPULAR</div>
-          <h4><span class="span1">PRO</span> PLAN</h4>
-          <p>$<span class="span2">98</span></p>
-          <p class="description">
+        <div class="price-card2">
+          <div class="popular-plan">MOST POPULAR</div>
+          <h4><span class="plan-details">PRO</span> PLAN</h4>
+          <p>$<span class="plan-price">98</span></p>
+          <p class="price-description">
             Our most popular package is the Pro Plan which gives you access to
             the following:
           </p>
@@ -121,14 +121,16 @@
             </svg>
             <p>And One More</p>
           </div>
-          <div class="a">
-            <a id="a2" class="select" href="#">SELECT THIS PLAN</a>
+          <div class="plan-container">
+            <a id="user-selected" class="select-plan" href="#"
+              >SELECT THIS PLAN</a
+            >
           </div>
         </div>
-        <div class="card3">
-          <h4><span class="span1">Premium</span> PLAN</h4>
-          <p>$<span class="span2">78</span></p>
-          <p class="description">
+        <div class="price-card3">
+          <h4><span class="plan-details">Premium</span> PLAN</h4>
+          <p>$<span class="plan-price">78</span></p>
+          <p class="price-description">
             With our premium plan you can take advantage of all the following
             features:
           </p>
@@ -180,8 +182,8 @@
             </svg>
             <p>One More Feature</p>
           </div>
-          <div class="a" id="a3">
-            <a class="select" href="#">SELECT THIS PLAN</a>
+          <div class="plan-container">
+            <a class="select-plan" href="#">SELECT THIS PLAN</a>
           </div>
         </div>
       </div>
@@ -189,18 +191,16 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
 #tick-icon {
-  width: 20px;
+  width: 1.2rem;
 }
 
 #Pricing {
   border-bottom: 1px solid #f2f5f9;
-  margin-bottom: 60px;
-  padding-bottom: 170px;
-  margin-top: 60px;
+  margin-bottom: 3.7rem;
+  padding-bottom: 10.6rem;
+  margin-top: 3.7rem;
 }
 
 .Price-details {
@@ -219,75 +219,75 @@
   color: #667eea;
 }
 
-.cards {
+.price-cards {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 1.8rem;
 }
-.card1,
-.card2,
-.card3 {
-  padding: 15px 25px 25px 25px;
+.price-card1,
+.price-card2,
+.price-card3 {
+  padding: 0.9rem 1.5rem 1.5rem 1.5rem;
   border-radius: 5px;
 }
-.card1 {
+.price-card1 {
   border: 1px solid #f2f5f9;
   box-shadow: 2px 2px 5px #f2f5f9;
 }
-.card1 h4,
+.price-card1 h4,
 p,
-.card2 h4,
+.price-card2 h4,
 p,
 h5,
-.card3 h4,
+.price-card3 h4,
 p {
   text-align: center;
 }
 
-.card1 h4,
-.card2 h4,
-.card3 h4 {
+.price-card1 h4,
+.price-card2 h4,
+.price-card3 h4 {
   font-weight: 200;
 }
-.card1 .span1,
-.card2 .span1,
-.card3 .span1 {
+.price-card1 .plan-details,
+.price-card2 .plan-details,
+.price-card3 .plan-details {
   font-weight: bold;
 }
-.card2 {
+.price-card2 {
   box-shadow: 4px 4px 8px #a1a8b1;
   padding-top: 0px;
 }
 
-div.a {
+div.plan-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
-.a a:hover {
+.plan-container a:hover {
   background-color: #38a169;
 }
-div #a2:hover {
+div #user-selected:hover {
   background-color: #5a67d8;
 }
 
-div.h5 {
+div.popular-plan {
   width: 107%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 0.9rem;
   color: white;
   background-color: #667eea;
   margin-left: -25px;
   border-radius: 5px 5px 0px 0px;
 }
 
-.card3 {
+.price-card3 {
   border: 1px solid #f2f5f9;
   box-shadow: 2px 2px 5px #f2f5f9;
 }
@@ -298,49 +298,68 @@ div.h5 {
 .tick-icon {
   color: green;
 }
-.span2 {
-  font-size: 30px;
+.plan-price {
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-left: 5px;
+  margin-left: 0.3rem;
   align-items: center;
   justify-content: center;
 }
-.description {
+.price-description {
   text-align: start;
   max-width: 300px;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: grey;
 }
-a.select {
+a.select-plan {
   text-decoration: none;
   background-color: rgb(42, 42, 42);
   color: white;
-  padding: 15px 40px;
+  padding: 0.9rem 2.5rem;
   border-radius: 5px;
   width: 90%;
   text-align: center;
   font-weight: 600;
 }
 
-@media (max-width: 900px) {
-  .cards {
+@media screen and (max-width: 900px) {
+  .price-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 1.8rem;
   }
-  .card2,
-  .card3 {
-    margin-top: 40px;
+  .price-card2,
+  .price-card3 {
+    margin-top: 2.5rem;
   }
   .Price-details h3 {
     font-size: 2rem;
     text-align: center;
   }
   #Pricing {
-    padding-bottom: 80px;
-    margin-top: 10px;
+    padding-bottom: 5rem;
+    margin-top: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Price-details h3 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Price-details h3 {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  .price-cards {
+    padding: 0.8rem;
+  }
+  div.plan-container {
+    margin-top: 0.5rem;
   }
 }
 </style>

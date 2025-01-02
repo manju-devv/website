@@ -133,14 +133,12 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
 .feedbacks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin: 50px;
+  gap: 3.2rem;
+  margin: 3.2rem;
 }
 
 .feedbacks .feedback1,
@@ -151,8 +149,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #f0f5ff;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 1.4rem;
+  border-radius: 0.3rem;
 }
 
 .feedback1:hover,
@@ -172,8 +170,8 @@
 p.feed-p {
   display: flex;
   padding: 0;
-  margin: 10px;
-  margin-left: 50px;
+  margin: 0.6rem;
+  margin-left: 3.2rem;
   width: 80%;
 }
 .feedback1 h3,
@@ -181,9 +179,9 @@ p.feed-p {
 .feedback3 h3,
 .feedback4 h3 {
   color: grey;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 .feedback1 p,
 .feedback2 p,
@@ -193,9 +191,9 @@ p.feed-p {
 }
 
 #Testimonials {
-  margin-top: 100px;
+  margin-top: 6.4rem;
   border-bottom: 1px solid #f2f5f9;
-  padding-bottom: 150px;
+  padding-bottom: 9.3rem;
 }
 .foot-data h4,
 h1,
@@ -204,7 +202,7 @@ p {
 }
 .foot-data h4 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #3b7cc1;
   text-transform: uppercase;
 }
@@ -212,11 +210,11 @@ p {
   font-size: 3.5rem;
   font-weight: 900;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.4rem;
 }
 .foot-data p {
   color: #a0aec0;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
   max-width: 600px;
   margin: 0 auto;
@@ -227,31 +225,31 @@ p {
 }
 
 .feed-img {
-  width: 100px;
-  height: 100px;
+  width: 6.2rem;
+  height: 6.2rem;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 1.2rem;
 }
 #mark,
 #mark1,
 #mark2,
 #mark3 {
-  width: 35px;
+  width: 2.1rem;
   fill: #667eea;
   position: absolute;
   left: 2%;
   top: -15%;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .feedbacks {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 3.1rem;
   }
-  @media (max-width: 800px) {
+  @media screen and (max-width: 800px) {
     .feedbacks .feedback1,
     .feedback2,
     .feedback3,
@@ -264,9 +262,38 @@ p {
       width: 90%;
     }
     #Testimonials {
-      margin-top: 10px;
-      padding-bottom: 70px;
+      margin-top: 0.6rem;
+      padding-bottom: 4.3rem;
     }
   }
+}
+@media screen and (max-width: 600px) {
+  .foot-data h1 {
+    font-size: 2.5rem;
+  }
+  .foot-data p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .foot-data p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .foot-data h1 {
+    font-size: 2rem;
+  }
+  .foot-data p {
+    font-size: 0.8rem;
+  }
+  p.feed-p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /* working */
 }
 </style>

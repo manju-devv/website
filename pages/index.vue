@@ -6,17 +6,17 @@
     <PricePage />
     <TestimonialsPage />
     <Footer />
-    <!-- <side /> -->
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Navbar from "~/components/Navbar.vue";
 import HomePage from "~/components/HomePage.vue";
 import FeaturesPage from "~/components/FeaturesPage.vue";
 import PricePage from "~/components/PricePage.vue";
 import TestimonialsPage from "~/components/TestimonialsPage.vue";
 import Footer from "~/components/Footer.vue";
+
 import { definePageMeta } from "#imports";
 definePageMeta({
   title: "Landmark - Home",

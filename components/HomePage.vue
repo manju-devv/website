@@ -105,7 +105,7 @@
 
 <style scoped>
 #svg {
-  width: 50px;
+  width: 3.1rem;
 }
 
 section.home {
@@ -115,17 +115,17 @@ section.home {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  padding: 20px;
-  margin-top: 60px;
+  padding: 1.2rem;
+  margin-top: 3.7rem;
 }
 
 .content-container {
   flex: 1;
   box-sizing: border-box;
   height: 90vh;
-  margin-left: 180px;
-  padding: 20px;
-  margin-top: 20px;
+  margin-left: 11.2rem;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .main-img {
@@ -140,38 +140,38 @@ section.home {
 .imgg {
   height: 90vh;
   overflow-x: hidden;
-  right: -250px;
+  right: -15.6rem;
 }
 
 .h1 {
   font-size: 3.5rem;
   width: 500px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .p {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #718096;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 .pp {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #718096;
-  margin-top: 70px;
+  margin-top: 4.3rem;
 }
 .iconss {
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
+  margin-top: 1.2rem;
   fill: grey;
 }
 
 .iconss svg {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
+  margin-right: 0.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .iconss svg:hover {
   fill: #718096;
@@ -196,24 +196,24 @@ section.home {
 
 .sign-up {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 0.9rem 1.2rem;
   background-color: #6f6fe1;
   color: #fff;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  border-radius: 0.3rem;
+  margin-top: 1.25rem;
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .side-rect {
     display: none;
   }
   .content-container {
-    margin-left: 40px;
+    margin-left: 2.5rem;
   }
 }
-@media (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
   .content-container {
     margin-left: 0px;
   }
@@ -225,14 +225,14 @@ section.home {
   .imgg {
     position: absolute;
     height: 75vh;
-    margin-top: 60px;
-    right: -50px;
+    margin-top: 3.7rem;
+    right: -3.1rem;
   }
   .p {
     width: 45%;
   }
 }
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .content-container {
     display: flex;
     flex-direction: column;
@@ -240,13 +240,13 @@ section.home {
     justify-content: center;
   }
   section.home {
-    margin-top: -30px;
+    margin-top: -1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-bottom: -60px;
+    margin-bottom: -3.7rem;
   }
   .main-img {
     max-width: 100%;
@@ -267,6 +267,43 @@ section.home {
   .p {
     width: 70%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-container h1.h1 {
+    font-size: 2rem;
+  }
+  .content-container p.p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .content-container p.pp,
+  .iconss {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-container h1.h1 {
+    font-size: 1.4rem;
+  }
+  .content-container p.p {
+    font-size: 0.9rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .content-container h1.h1 {
+    font-size: 1.2rem;
+  }
+  .content-container p.p {
+    font-size: 0.7rem;
+    width: 55%;
+  }
+  div.main-img {
+    height: 50vh;
   }
 }
 </style>

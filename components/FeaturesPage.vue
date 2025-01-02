@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="Features">
-      <div class="mainn">
+      <div class="main-container">
         <header>
           <div><p>OUR FEATURES</p></div>
           <h1>Built and Designed with you in Mind</h1>
@@ -360,8 +360,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
 .contentt svg {
   width: 100%;
@@ -373,15 +371,15 @@
   background-color: #f7fafc;
 }
 
-.mainn {
-  margin: 140px 0px;
+.main-container {
+  margin: 8.75rem 0px;
 }
 #Features {
   position: relative;
   border-top: 1px solid #f2f5f9;
   border-bottom: 1px solid #f2f5f9;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 3.7rem;
+  margin-bottom: 3.7rem;
 }
 
 #Features header {
@@ -403,8 +401,8 @@ main .back-design {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  margin-top: 100px;
+  gap: 1.87rem;
+  margin-top: 6.25rem;
 }
 .contentt {
   display: flex;
@@ -418,8 +416,8 @@ main .back-design {
   max-width: 200px;
   margin: 0 auto;
   color: #718096;
-  line-height: 20px;
-  margin-left: 55px;
+  line-height: 1.25rem;
+  margin-left: 3.43rem;
   font-weight: 400;
 }
 .contentt .para0 {
@@ -427,7 +425,7 @@ main .back-design {
 }
 .contentt a {
   color: #3b7cc1;
-  margin-top: 5px;
+  margin-top: 0.3rem;
 }
 .data {
   position: absolute;
@@ -436,13 +434,31 @@ main .back-design {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .back-design {
     display: flex;
     flex-direction: column;
   }
   .mainn {
-    margin-top: 30px;
+    margin-top: 1.87rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-container header h1 {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  section#Features {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .main-container header h1 {
+    font-size: 1.5rem;
+    width: 80%;
   }
 }
 </style>
