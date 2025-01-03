@@ -1,9 +1,13 @@
 <template>
   <div>
-    <header class="navbar">
+    <header class="navbar py-12">
       <div class="container">
-        <nav class="align">
-          <div class="svg">
+        <nav
+          class="align flex flex-row gap-[1.8rem] items-center justify-around"
+        >
+          <div
+            class="svg absolute left-[12%] flex items-center gap-[0.6rem] ml-[0.3rem]"
+          >
             <svg
               class="w-auto h-6 text-indigo-600 fill-current"
               viewBox="0 0 194 116"
@@ -18,12 +22,17 @@
                 ></path>
               </g>
             </svg>
-            <h1 class="name">Landmark <span class="dot"></span></h1>
-          </div>
-          <div class="links">
-            <div class="setup-icons">
+            <h1 class="name font-black text-xl">
+              Landmark
               <span
-                class="menu-icon"
+                class="dot inline-block w-[5px] h-[5px] rounded-full bg-red-400 -ml-[0.3rem]"
+              ></span>
+            </h1>
+          </div>
+          <div class="links mt-[-0.9rem]">
+            <div class="setup-icons flex gap-[1rem]">
+              <span
+                class="menu-icon absolute text-[2rem] cursor-pointer top-[0.4%] right-[3%]"
                 @click="toggleNavbar"
                 v-if="windowWidth <= 1100"
                 >{{ hidden ? "&#9776;" : "&#10005;" }}</span
@@ -31,27 +40,66 @@
             </div>
             <ul
               :class="[
-                'nav-links',
+                'nav-links list-none flex gap-[1.8rem] p-0 m-0 absolute left-[38%]',
                 { isVisible: !hidden && windowWidth <= 1100 },
               ]"
             >
-              <li><a href="#Home" class="nav-link">Home</a></li>
-              <li><a href="#Features" class="nav-link">Features</a></li>
-              <li><a href="#Pricing" class="nav-link">Pricing</a></li>
-              <li><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+              <li>
+                <a
+                  href="#Home"
+                  class="nav-link no-underline text-black font-bold transition-all duration-200 hover:text-[#497bb1]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Features"
+                  class="nav-link no-underline text-black font-bold transition-all duration-200 hover:text-[#497bb1]"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Pricing"
+                  class="nav-link no-underline text-black font-bold transition-all duration-200 hover:text-[#497bb1]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Testimonials"
+                  class="nav-link no-underline text-black font-bold transition-all duration-200 hover:text-[#497bb1]"
+                  >Testimonials</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="links">
+          <div class="links mt-[-0.9rem]">
             <ul
               :class="[
-                'nav-links2',
-                { isVisible, isAlign: !hidden && windowWidth <= 1100 },
+                'nav-links2 list-none flex gap-[1.8rem] p-0 m-0 absolute right-[14%] ',
+                {
+                  isVisible: !hidden && windowWidth <= 1100,
+                  isAlign: !hidden && windowWidth <= 1100,
+                },
               ]"
             >
-              <li><a href="#" class="login">Login</a></li>
-              <li><a href="#" class="start">Get Started</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="login no-underline text-black font-bold transition-all duration-200"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="start no-underline text-[#616ee7] py-[0.6rem] px-[0.9rem] rounded-[0.3rem] ml-[1.25rem] font-bold transition-all duration-200 bg-white"
+                  >Get Started</a
+                >
+              </li>
             </ul>
-            <div class="square-pos">
+            <div class="square-pos relative">
               <div class="square1"></div>
               <div class="square2"></div>
             </div>
@@ -62,116 +110,37 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-const hidden = ref(true);
-const windowWidth = ref(0);
 
-function toggleNavbar() {
+const hidden = ref<boolean>(true);
+const windowWidth = ref<number>(0);
+
+function toggleNavbar(): void {
   hidden.value = !hidden.value;
 }
 
-function updateWindow() {
+function updateWindow(): void {
   windowWidth.value = window.innerWidth;
 }
+
 onMounted(() => {
   window.addEventListener("resize", updateWindow);
 });
+
 onUnmounted(() => {
   window.removeEventListener("resize", updateWindow);
 });
 </script>
 
 <style scoped>
-.navbar {
-  padding: 3rem 0;
-}
-.svg {
-  position: absolute;
-  left: 12%;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-left: 0.3rem;
-}
 .svg svg {
   height: 25px;
   fill: #3b7cc1;
 }
-.dot {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: rgb(246, 121, 121);
-  margin-left: -0.3rem;
-}
-.name {
-  font-weight: 900;
-  font-size: 1.25rem;
-}
 
-.align {
-  display: flex;
-  flex-direction: row;
-  gap: 1.8rem;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.nav-links,
-.nav-links2 {
-  list-style: none;
-  display: flex;
-  gap: 1.8rem;
-  margin: 0;
-  padding: 0;
-}
-
-.links {
-  margin-top: -0.9rem;
-}
-.nav-links {
-  position: absolute;
-  left: 38%;
-}
-.nav-links2 {
-  position: absolute;
-  display: flex;
-  gap: 1.2rem;
-  right: 14%;
-}
-
-.nav-link,
-.login,
-.start {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  transition: 0.2s;
-}
-
-.nav-link:hover {
-  color: #497bb1;
-}
-
-.start {
-  background-color: white;
-  color: #616ee7;
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.3rem;
-  margin-left: 1.25rem;
-}
 .start:hover {
   box-shadow: 2px 2px 5px skyblue;
-}
-
-.login {
-  color: white;
-}
-
-.square-pos {
-  position: relative;
 }
 
 .square1 {
@@ -179,7 +148,7 @@ onUnmounted(() => {
   width: 500px;
   height: 600px;
   top: -10rem;
-  right: -34.3rem;
+  right: -32.3rem;
   z-index: -1;
   background-color: #616ee7;
   transform: rotate(-60deg);
@@ -192,22 +161,20 @@ onUnmounted(() => {
   width: 500px;
   height: 500px;
   top: -15.6rem;
-  right: -31.25rem;
+  right: -30.25rem;
   z-index: -100;
   background-color: #f13aa4;
   transform: rotate(45deg);
   border-radius: 2.5rem;
 }
-.setup-icons {
-  display: flex;
-  gap: 1rem;
-}
-.menu-icon {
-  position: absolute;
-  font-size: 2rem;
-  cursor: pointer;
-  top: 0.4%;
-  right: 3%;
+
+@media screen and (max-width: 1279px) {
+  .square1 {
+    right: -39.3rem;
+  }
+  .square2 {
+    right: -37.25rem;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -284,7 +251,7 @@ onUnmounted(() => {
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: 4%;
+    top: 4.2%;
     border-top: 1px solid #f2f5f9;
     padding-top: 1rem;
     padding-bottom: 2.2rem;
@@ -327,7 +294,12 @@ onUnmounted(() => {
     padding-bottom: 50px;
   }
   ul.isAlign {
-    top: 3.5%;
+    top: 4.5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  ul.isAlign {
+    top: 4%;
   }
 }
 
@@ -386,7 +358,7 @@ onUnmounted(() => {
     font-size: 0.7rem;
   }
   ul.isAlign {
-    top: 2.5%;
+    top: 3.5%;
     padding-bottom: 1.5rem;
   }
 }

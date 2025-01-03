@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container flex flex-col relative overflow-x-hidden">
     <Navbar />
     <HomePage />
     <FeaturesPage />
@@ -17,11 +17,7 @@ import PricePage from "~/components/PricePage.vue";
 import TestimonialsPage from "~/components/TestimonialsPage.vue";
 import Footer from "~/components/Footer.vue";
 
-import { definePageMeta } from "#imports";
-definePageMeta({
-  title: "Landmark - Home",
-  description: "Home page of Landmark website designed using Nuxt3",
-});
+
 </script>
 
 <style>
@@ -44,10 +40,4 @@ body {
   overflow-x: hidden;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow-x: hidden;
-}
 </style>

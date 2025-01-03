@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section id="footer">
-      <div class="end">
-        <div class="end1">
+    <section id="footer" class="mt-[4.3rem]">
+      <div class="end flex border-b border-[#f2f5f9] pb-[1.87rem] mb-[1.87rem]">
+        <div class="end1 flex flex-col ml-[80px]">
           <div>
             <div class="svg-end">
               <svg
@@ -21,14 +21,16 @@
               </svg>
             </div>
           </div>
-          <div class="end-p">
-            <p>Crafting the next-level of user experience and engagement.</p>
+          <div class="end-p max-w-[16rem] ml-[-1.25rem] text-gray-500">
+            <p class="mt-5 ml-4">
+              Crafting the next-level of user experience and engagement.
+            </p>
           </div>
         </div>
-        <div class="part2">
-          <div class="end2">
-            <div><h5>PRODUCT</h5></div>
-            <div>
+        <div class="part2 flex gap-[3.7rem] ml-[3.5rem]">
+          <div class="end2 flex flex-col">
+            <div><h5 class="font-bold">PRODUCT</h5></div>
+            <div class="ml-9 mt-4">
               <ul class="first-ul">
                 <li>Features</li>
                 <li>Integrations</li>
@@ -37,18 +39,18 @@
               </ul>
             </div>
           </div>
-          <div class="end3">
-            <div><h5>PRIVACY</h5></div>
-            <div>
+          <div class="end3 flex flex-col">
+            <div><h5 class="font-bold">PRIVACY</h5></div>
+            <div class="ml-8 mt-4">
               <ul class="first-ul second">
                 <li>Privacy</li>
                 <li>Terms of Service</li>
               </ul>
             </div>
           </div>
-          <div class="end4">
-            <div><h5>TailwindCSS</h5></div>
-            <div class="a-links">
+          <div class="end4 flex flex-col items-center ml-[-3.1rem]">
+            <div><h5 class="font-bold">TailwindCSS</h5></div>
+            <div class="a-links flex flex-col mt-2">
               <a href="https://devdojo.com/tailwindcss/components"
                 >Tailwind Components</a
               >
@@ -58,8 +60,10 @@
               <a href="https://devdojo.com/tails">Tails</a>
             </div>
           </div>
-          <div class="end5">
-            <div>FOLLOW US</div>
+          <div
+            class="end5 flex flex-col items-center mt-[-0.1rem] font-semibold"
+          >
+            <div class="font-bold">FOLLOW US</div>
             <div class="social-iicons">
               <svg
                 id="ic"
@@ -95,8 +99,14 @@
           </div>
         </div>
       </div>
-      <div class="copyright">© 2020 Landmark. All rights reserved.</div>
-      <div class="distribution">Distributed By Themewagon</div>
+      <div
+        class="copyright pb-[0.6rem] mb-[0.9rem] border-b border-[#f2f5f9] text-[#abb8c7] text-center"
+      >
+        © 2020 Landmark. All rights reserved.
+      </div>
+      <div class="distribution text-center text-[#abb8c7] pb-[1.8rem]">
+        Distributed By Themewagon
+      </div>
     </section>
   </div>
 </template>
@@ -106,41 +116,12 @@
   height: 25px;
 }
 
-#footer {
-  margin-top: 4.3rem;
-}
-.end {
-  display: flex;
-  border-bottom: 1px solid #f2f5f9;
-  padding-bottom: 1.87rem;
-  margin-bottom: 1.87rem;
-}
-.end1 {
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
-}
-.end1 .end-p {
-  max-width: 16rem;
-  margin-left: -1.25rem;
-  color: grey;
-}
-.part2 {
-  display: flex;
-  gap: 3.7rem;
-  margin-left: 2.5rem;
-}
 li {
   list-style-type: none;
   color: grey;
   margin-top: 0.62rem;
 }
 
-.end2,
-.end3 {
-  display: flex;
-  flex-direction: column;
-}
 ul.first-ul {
   margin-top: -0.62rem;
   margin-left: -2.1rem;
@@ -148,16 +129,7 @@ ul.first-ul {
 ul.second {
   margin-left: -1.8rem;
 }
-.end4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: -3.1rem;
-}
-.end4 .a-links {
-  display: flex;
-  flex-direction: column;
-}
+
 .a-links a {
   margin-left: 4.6rem;
   margin-top: 0.31rem;
@@ -169,13 +141,6 @@ ul.second {
   width: 1.25rem;
 }
 
-.end5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.25rem;
-  font-weight: 700;
-}
 #ic {
   cursor: pointer;
   margin-top: 1.25rem;
@@ -184,18 +149,6 @@ ul.second {
 }
 #ic:hover {
   fill: black;
-}
-.copyright {
-  padding-bottom: 0.6rem;
-  margin-bottom: 0.9rem;
-  border-bottom: 1px solid #f2f5f9;
-  color: #abb8c7;
-  text-align: center;
-}
-.distribution {
-  text-align: center;
-  color: #abb8c7;
-  padding-bottom: 1.8rem;
 }
 
 @media (max-width: 800px) {

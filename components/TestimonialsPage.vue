@@ -1,18 +1,29 @@
 <template>
   <div>
-    <section id="Testimonials">
+    <section
+      id="Testimonials"
+      class="mt-[6.4rem] border-b border-[#f2f5f9] pb-[9.3rem]"
+    >
       <div class="foot-data">
-        <h4>Our customers love our product</h4>
-        <h1>Testimonials</h1>
-        <p>
+        <h4
+          class="text-center font-medium text-[1.1rem] text-[#3b7cc1] uppercase"
+        >
+          Our customers love our product
+        </h4>
+        <h1 class="text-center text-[3.5rem] font-extrabold mt-0 mb-[1.4rem]">
+          Testimonials
+        </h1>
+        <p
+          class="text-center text-[#a0aec0] text-[1.2rem] font-semibold max-w-[600px] mx-auto"
+        >
           Don't just take our word for it, read from our extensive list of case
           studies and customer testimonials.
         </p>
       </div>
-      <div class="feedbacks">
+      <div class="feedbacks grid grid-cols-2 gap-[3.2rem] m-[3.2rem]">
         <div class="feedback1">
           <div>
-            <div class="feedback-context">
+            <div class="feedback-context relative">
               <svg
                 id="mark"
                 class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
@@ -23,11 +34,17 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 ></path>
               </svg>
-              <h3 class="feed-h3">
+              <h3
+                class="feed-h3 flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] text-gray-500 text-[1rem] font-normal mb-[0.3rem]"
+              >
                 I'm loving these templates! Very nice features and layouts.
               </h3>
-              <p class="feed-p">
-                Sandra Walton<span class="s"> - CEO SomeCompany</span>
+              <p
+                class="feed-p flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] font-semibold"
+              >
+                Sandra Walton<span class="s text-gray-500 indent-[5px]">
+                  - CEO SomeCompany</span
+                >
               </p>
             </div>
           </div>
@@ -41,7 +58,7 @@
         </div>
         <div class="feedback2">
           <div>
-            <div class="feedback-context">
+            <div class="feedback-context relative">
               <svg
                 id="mark2"
                 class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
@@ -52,12 +69,19 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 ></path>
               </svg>
-              <h3 class="feed-h3">
+              <h3
+                class="feed-h3 flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] text-gray-500 text-[1rem] font-normal mb-[0.3rem]"
+              >
                 Really digging this service. Now I can quickly bootstrap any
                 project.
               </h3>
-              <p class="feed-p">
-                Kenny Jones <span class="s"> - CEO SomeCompany</span>
+              <p
+                class="feed-p flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] font-semibold"
+              >
+                Kenny Jones
+                <span class="s text-gray-500 indent-[5px]">
+                  - CEO SomeCompany</span
+                >
               </p>
             </div>
           </div>
@@ -71,7 +95,7 @@
         </div>
         <div class="feedback3">
           <div>
-            <div class="feedback-context">
+            <div class="feedback-context relative">
               <svg
                 id="mark3"
                 class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
@@ -82,11 +106,18 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 ></path>
               </svg>
-              <h3 class="feed-h3">
+              <h3
+                class="feed-h3 flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] text-gray-500 text-[1rem] font-normal mb-[0.3rem]"
+              >
                 Extremely helpful in every single project we have released.
               </h3>
-              <p class="feed-p">
-                Mike Smith <span class="s"> - CEO SomeCompany</span>
+              <p
+                class="feed-p flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] font-semibold"
+              >
+                Mike Smith
+                <span class="s text-gray-500 indent-[5px]">
+                  - CEO SomeCompany</span
+                >
               </p>
             </div>
           </div>
@@ -100,7 +131,7 @@
         </div>
         <div class="feedback4">
           <div>
-            <div class="feedback-context">
+            <div class="feedback-context relative">
               <svg
                 id="mark3"
                 class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
@@ -111,12 +142,19 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 ></path>
               </svg>
-              <h3 class="feed-h3">
+              <h3
+                class="feed-h3 flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] text-gray-500 text-[1rem] font-normal mb-[0.3rem]"
+              >
                 Finally a quick and easy system I can use for any type of
                 project.
               </h3>
-              <p class="feed-p">
-                Molly Sanchez <span class="s"> - CEO SomeCompany</span>
+              <p
+                class="feed-p flex p-0 m-[0.6rem] ml-[3.2rem] w-[80%] font-semibold"
+              >
+                Molly Sanchez
+                <span class="s text-gray-500 indent-[5px]">
+                  - CEO SomeCompany</span
+                >
               </p>
             </div>
           </div>
@@ -134,13 +172,6 @@
 </template>
 
 <style scoped>
-.feedbacks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3.2rem;
-  margin: 3.2rem;
-}
-
 .feedbacks .feedback1,
 .feedback2,
 .feedback3,
@@ -159,69 +190,6 @@
 .feedback4:hover {
   cursor: pointer;
   box-shadow: 2px 2px 4px rgb(135, 116, 116);
-}
-
-.feedback-context span {
-  color: grey;
-  text-indent: 5px;
-}
-
-.feedback-context h3.feed-h3,
-p.feed-p {
-  display: flex;
-  padding: 0;
-  margin: 0.6rem;
-  margin-left: 3.2rem;
-  width: 80%;
-}
-.feedback1 h3,
-.feedback2 h3,
-.feedback3 h3,
-.feedback4 h3 {
-  color: grey;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 0.3rem;
-}
-.feedback1 p,
-.feedback2 p,
-.feedback3 p,
-.feedback4 p {
-  font-weight: 600;
-}
-
-#Testimonials {
-  margin-top: 6.4rem;
-  border-bottom: 1px solid #f2f5f9;
-  padding-bottom: 9.3rem;
-}
-.foot-data h4,
-h1,
-p {
-  text-align: center;
-}
-.foot-data h4 {
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #3b7cc1;
-  text-transform: uppercase;
-}
-.foot-data h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 1.4rem;
-}
-.foot-data p {
-  color: #a0aec0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.feedback-context {
-  position: relative;
 }
 
 .feed-img {
@@ -294,6 +262,22 @@ p {
 }
 
 @media screen and (max-width: 300px) {
-  /* working on this media-query */
+  svg {
+    display: none;
+  }
+  .feed-h3,
+  .feed-p {
+    margin: 0;
+    padding: 0;
+  }
+  h3.feed-h3 {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  p.feed-p {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 </style>

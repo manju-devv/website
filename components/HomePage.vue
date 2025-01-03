@@ -1,16 +1,25 @@
 <template>
   <div>
-    <section id="Home" class="home">
-      <div class="content-container">
-        <h1 class="h1">Build the Next Great Thing</h1>
-        <p class="p">
+    <section
+      id="Home"
+      class="home flex items-center justify-between relative h-screen overflow-hidden p-[1.2rem] mt-[3.7rem]"
+    >
+      <div
+        class="content-container flex-1 box-border h-[90vh] ml-[11.2rem] p-[1.2rem] mt-[1.2rem]"
+      >
+        <h1 class="h1 text-[3.5rem] w-[500px] font-black mb-[0.6rem]">
+          Build the Next Great Thing
+        </h1>
+        <p class="p text-[1.2rem] leading-[1.5] text-[#718096] mb-[0.6rem]">
           Are you ready to start your adventure and start building the next
           greatest SAAS app on the market?
         </p>
         <div class="side-rect"></div>
         <a href="#_" class="sign-up">Signup Today!</a>
-        <p class="pp">INTEGRATES WITH</p>
-        <div class="iconss">
+        <p class="pp text-[0.8rem] text-[#718096] mt-[4.3rem]">
+          INTEGRATES WITH
+        </p>
+        <div class="iconss flex justify-start mt-[1.2rem] fill-gray-500">
           <svg
             id="svg"
             class="h-8 mr-4 text-gray-500 duration-150 cursor-pointer fill-current transition-color hover:text-gray-600"
@@ -92,7 +101,7 @@
       </div>
       <div class="main-img">
         <img
-          class="imgg"
+          class="imgg h-[90vh] overflow-x-hidden right-[-15.6rem]"
           src="https://cdn.devdojo.com/images/september2020/macbook-mockup.png"
           alt="computer-icon"
         />
@@ -101,31 +110,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
 #svg {
   width: 3.1rem;
-}
-
-section.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  padding: 1.2rem;
-  margin-top: 3.7rem;
-}
-
-.content-container {
-  flex: 1;
-  box-sizing: border-box;
-  height: 90vh;
-  margin-left: 11.2rem;
-  padding: 1.2rem;
-  margin-top: 1.2rem;
 }
 
 .main-img {
@@ -135,37 +122,6 @@ section.home {
   right: 0;
   height: 90vh;
   max-width: 100%;
-}
-
-.imgg {
-  height: 90vh;
-  overflow-x: hidden;
-  right: -15.6rem;
-}
-
-.h1 {
-  font-size: 3.5rem;
-  width: 500px;
-  font-weight: 900;
-  margin-bottom: 0.6rem;
-}
-
-.p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #718096;
-  margin-bottom: 0.6rem;
-}
-.pp {
-  font-size: 0.8rem;
-  color: #718096;
-  margin-top: 4.3rem;
-}
-.iconss {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 1.2rem;
-  fill: grey;
 }
 
 .iconss svg {

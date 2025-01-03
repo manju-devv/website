@@ -1,16 +1,25 @@
 <template>
   <div>
-    <section id="Features">
-      <div class="main-container">
-        <header>
-          <div><p>OUR FEATURES</p></div>
-          <h1>Built and Designed with you in Mind</h1>
+    <section
+      id="Features"
+      class="relative border-t border-b border-[#f2f5f9] mt-[3.7rem] mb-[3.7rem]"
+    >
+      <div class="main-container my-[8.75rem]">
+        <header class="flex flex-col items-center">
+          <div><p class="text-[#667eea]">OUR FEATURES</p></div>
+          <h1 class="text-[3rem] font-extrabold max-w-[500px] mx-auto">
+            Built and Designed with you in Mind
+          </h1>
         </header>
         <main>
-          <div class="back-design">
-            <div class="contentt">
+          <div
+            class="back-design flex items-center justify-center gap-[1.87rem] mt-[6.25rem]"
+          >
+            <div
+              class="contentt flex flex-col justify-center items-center relative"
+            >
               <svg
-                class="absolute w-full h-full text-gray-100 fill-current"
+                class="w-full h-full text-gray-100 fill-current"
                 viewBox="0 0 377 340"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -23,7 +32,9 @@
                   </g>
                 </g>
               </svg>
-              <div class="data">
+              <div
+                class="data absolute flex flex-col justify-center items-center"
+              >
                 <svg
                   id="icons1"
                   class="relative w-20 h-20"
@@ -122,17 +133,21 @@
                     </g>
                   </g>
                 </svg>
-                <p class="para0">Automated Tools</p>
-                <p class="para">
+                <p class="para0 font-bold">Automated Tools</p>
+                <p
+                  class="para max-w-[200px] mx-auto text-[#718096] leading-[1.25rem] ml-[3.43rem] font-normal"
+                >
                   Automate your workflow with these top of the line marketing
                   tools.
                 </p>
-                <a href="#">Learn More</a>
+                <a class="mt-[0.3rem] text-[#3b7cc1]" href="#">Learn More</a>
               </div>
             </div>
-            <div class="contentt">
+            <div
+              class="contentt flex flex-col justify-center items-center relative"
+            >
               <svg
-                class="absolute w-full h-full text-gray-100 fill-current"
+                class="w-full h-full text-gray-100 fill-current"
                 viewBox="0 0 358 372"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -145,7 +160,9 @@
                   </g>
                 </g>
               </svg>
-              <div class="data">
+              <div
+                class="data absolute flex flex-col justify-center items-center"
+              >
                 <svg
                   id="icons1"
                   class="relative w-20 h-20"
@@ -234,17 +251,21 @@
                     </g>
                   </g>
                 </svg>
-                <p class="para0">Machine Learning</p>
-                <p class="para">
+                <p class="para0 font-bold">Machine Learning</p>
+                <p
+                  class="para max-w-[200px] mx-auto text-[#718096] leading-[1.25rem] ml-[3.43rem] font-normal"
+                >
                   Your Marketing tools will learn how to better convert and
                   sell.
                 </p>
-                <a href="#">Learn More</a>
+                <a class="mt-[0.3rem] text-[#3b7cc1]" href="#">Learn More</a>
               </div>
             </div>
-            <div class="contentt">
+            <div
+              class="contentt flex flex-col justify-center items-center relative"
+            >
               <svg
-                class="absolute w-full h-full text-gray-100 fill-current"
+                class="w-full h-full text-gray-100 fill-current"
                 viewBox="0 0 378 410"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -257,7 +278,9 @@
                   </g>
                 </g>
               </svg>
-              <div class="data">
+              <div
+                class="data absolute flex flex-col justify-center items-center"
+              >
                 <svg
                   id="icons1"
                   class="relative w-20 h-20"
@@ -346,11 +369,13 @@
                     </g>
                   </g>
                 </svg>
-                <p class="para0">Smart Notifications</p>
-                <p class="para">
+                <p class="para0 font-bold">Smart Notifications</p>
+                <p
+                  class="para max-w-[200px] mx-auto text-[#718096] leading-[1.25rem] ml-[3.43rem] font-normal"
+                >
                   Our smart notifications will notify you when users convert.
                 </p>
-                <a href="#">Learn More</a>
+                <a class="mt-[0.3rem] text-[#3b7cc1]" href="#">Learn More</a>
               </div>
             </div>
           </div>
@@ -367,73 +392,7 @@
 #icons1 {
   width: 60px;
 }
-#card {
-  background-color: #f7fafc;
-}
 
-.main-container {
-  margin: 8.75rem 0px;
-}
-#Features {
-  position: relative;
-  border-top: 1px solid #f2f5f9;
-  border-bottom: 1px solid #f2f5f9;
-  margin-top: 3.7rem;
-  margin-bottom: 3.7rem;
-}
-
-#Features header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-header p {
-  color: #667eea;
-}
-header h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  max-width: 500px;
-  margin: 0 auto;
-}
-main .back-design {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.87rem;
-  margin-top: 6.25rem;
-}
-.contentt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.contentt .para {
-  max-width: 200px;
-  margin: 0 auto;
-  color: #718096;
-  line-height: 1.25rem;
-  margin-left: 3.43rem;
-  font-weight: 400;
-}
-.contentt .para0 {
-  font-weight: 700;
-}
-.contentt a {
-  color: #3b7cc1;
-  margin-top: 0.3rem;
-}
-.data {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (max-width: 1100px) {
   .back-design {
     display: flex;
